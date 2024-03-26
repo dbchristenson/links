@@ -7,31 +7,33 @@
 </head>
 
 <body>
-  <div class="banner">
-    <img src="resources/anime_headshot.png" alt="cartoon headshot" class="banner-img">
-  </div>
+  <div class="items">
+    <div class="banner">
+      <img src="resources/anime_headshot.png" alt="cartoon headshot" class="banner-img">
+    </div>
 
-  <div class="name">
-    DB Christenson
-  </div>
+    <div class="name">
+      DB Christenson
+    </div>
 
-  <div class="social-icons">
-    <a href="https://github.com/dbchristenson" target="_blank">
-      github
-    </a>
+    <div class="social-icons">
+      <a href="https://github.com/dbchristenson" target="_blank">
+        github
+      </a>
 
-    <a href="https://www.linkedin.com/in/dbeauchristenson/" target="_blank">
-      linkedin
-    </a>
+      <a href="https://www.linkedin.com/in/dbeauchristenson/" target="_blank">
+        linkedin
+      </a>
 
-    <a href="https://www.instagram.com/db_christenson/" target="_blank">
-      instagram
-    </a>
-  </div>
+      <a href="https://www.instagram.com/db_christenson/" target="_blank">
+        instagram
+      </a>
+    </div>
 
-  <div class="link">
-    <img src="resources/resume_thumbnail.jpg" alt="resume link thumbnail" class="thumbnail">
-    <a href="">Resume</a>
+    <div class="link">
+      <img src="resources/resume_thumbnail.jpg" alt="resume link thumbnail" class="thumbnail">
+      <a href="">Resume</a>
+    </div>
   </div>
 </body>
 
@@ -42,6 +44,19 @@
     background-color: #55423d;
   }
 
+  .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 3840px;
+    flex-grow: 1;
+  }
+
+  .banner {
+    justify-content: center;
+  }
+
   .banner-img {
     height: 128px;
     width: 128px;
@@ -50,28 +65,39 @@
   }
 
   .thumbnail {
-  width: 48px;
-  height: 48px;
-  border-radius: 48px;
-  object-fit: cover;
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    object-fit: cover;
   }
 
   .name {
     color: #fffffe;
+    justify-content: center;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: space-around
   }
 
   .social-icons a {
-  color: #fffffe;
-  text-decoration: none;
+    color: #fffffe;
+    text-decoration: none;
   }
 
   .link {
-  background-color: #ffc0ad;
+    background-color: #ffc0ad;
+    display: flex;
+    align-items: center;
+    padding: 5px;
   }
 
   .link a {
   color: #001e1d;
   text-decoration: none;
+  text-align: center;
+  flex-grow: 1;
   }
 </style>
 </html>
