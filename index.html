@@ -8,7 +8,7 @@
 
 <body>
   <div class="banner">
-    <img src="resources/anime_headshot.png" alt="cartoon headshot">
+    <img src="resources/anime_headshot.png" alt="cartoon headshot" class="banner-img">
   </div>
 
   <div class="name">
@@ -30,8 +30,29 @@
   </div>
 
   <div class="link">
-    <img src="" alt="">
+    <img src="resources/resume_thumbnail.jpg" alt="resume link thumbnail" class="thumbnail">
     <a href="">Resume</a>
   </div>
 </body>
+
+<style>
+  body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .banner-img {
+    height: 128px;
+    width: 128px;
+    object-fit: cover;
+    border-radius: 128px;
+  }
+
+    .thumbnail {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  object-fit: cover;
+  }
+</style>
 </html>
